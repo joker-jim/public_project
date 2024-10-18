@@ -1,0 +1,15 @@
+File description:
+
+main.cpp : is the file completed according to the task requirements, in which there are two options for skin color detection,dark is used in dark conditions, and light is used in a well-lit environment.
+
+random_forest_model.cpp : This is the file to train and generate the random forest
+
+random_forest_model.xml : This is the generated xml file
+
+exp : It contains training images for the machine learning-nearly 70 images per folder.
+
+Video.mp4 : This is the video of testing test3 and test6 to meet the task requirements
+
+test3.cpp : This makes predictions for each photo in the file and displays the results
+
+test6.cpp : It predicts the gesture number through the camera in the dark, displays the frame rate and the prediction result

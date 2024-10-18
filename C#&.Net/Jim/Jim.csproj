@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D01D95A-A05F-4C3C-A4D9-B91224C3BA25}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Jim</RootNamespace>
+    <AssemblyName>Jim</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\Mac\Home\Downloads\新建文件夹\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4E2694B3199527CF650E1DF47A95DB50836BBB62</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Jim_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BCrypt.Net-Next, Version=4.0.3.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt.Net-Next.4.0.3\lib\net472\BCrypt.Net-Next.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form\employee\Administrator\Fault.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\employee\Administrator\Fault.Designer.cs">
+      <DependentUpon>Fault.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\employee\Administrator\Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\employee\Administrator\Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\employee\Administrator\Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\employee\Administrator\Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\employee\Administrator\Administrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\employee\Administrator\Administrator.Designer.cs">
+      <DependentUpon>Administrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\InformationRecord.cs" />
+    <Compile Include="Form\Customer\AddOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Customer\AddOrder.Designer.cs">
+      <DependentUpon>AddOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\EmployeeInfo.cs" />
+    <Compile Include="Code\UserInfo.cs" />
+    <Compile Include="Code\EmployeeCache.cs" />
+    <Compile Include="Form\employee\HelpDeskStaff\HelpDeskStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\employee\HelpDeskStaff\HelpDeskStaff.Designer.cs">
+      <DependentUpon>HelpDeskStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\SQLiteDBHelper.cs" />
+    <Compile Include="Form\employee\Developer\Developer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\employee\Developer\Developer.Designer.cs">
+      <DependentUpon>Developer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Application.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Application.Designer.cs">
+      <DependentUpon>Application.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\employee\EmployeeLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\employee\EmployeeLogin.Designer.cs">
+      <DependentUpon>EmployeeLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Program.cs" />
+    <Compile Include="Form\employee\Manager\Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\employee\Manager\Manager.Designer.cs">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\employee\HelpDeskStaff\Ordermanagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\employee\HelpDeskStaff\Ordermanagement.Designer.cs">
+      <DependentUpon>Ordermanagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\employee\HelpDeskStaff\OrderAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\employee\HelpDeskStaff\OrderAdd.Designer.cs">
+      <DependentUpon>OrderAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\employee\Manager\Managerorder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\employee\Manager\Managerorder.Designer.cs">
+      <DependentUpon>Managerorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\employee\Manager\Managertalk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\employee\Manager\Managertalk.Designer.cs">
+      <DependentUpon>Managertalk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\employee\Developer\Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\employee\Developer\Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Information.cs" />
+    <Compile Include="Form\employee\Administrator\Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\employee\Administrator\Product.Designer.cs">
+      <DependentUpon>Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Form\Customer\UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Customer\UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Customer\UserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Customer\UserLogin.Designer.cs">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\UserCache.cs" />
+    <Compile Include="Form\Customer\UpdataOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Customer\UpdataOrder.Designer.cs">
+      <DependentUpon>UpdataOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\employee\HelpDeskStaff\Usermanagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\employee\HelpDeskStaff\Usermanagement.Designer.cs">
+      <DependentUpon>Usermanagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\employee\Manager\Mtalk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\employee\Manager\Mtalk.Designer.cs">
+      <DependentUpon>Mtalk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\employee\Developer\Talk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\employee\Developer\Talk.Designer.cs">
+      <DependentUpon>Talk.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form\Application.resx">
+      <DependentUpon>Application.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\employee\Administrator\Administrator.resx">
+      <DependentUpon>Administrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\employee\Administrator\Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\employee\Administrator\Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\employee\Administrator\Fault.resx">
+      <DependentUpon>Fault.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\employee\Administrator\Product.resx">
+      <DependentUpon>Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\employee\Developer\Developer.resx">
+      <DependentUpon>Developer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\employee\Developer\Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\employee\Developer\Talk.resx">
+      <DependentUpon>Talk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\employee\HelpDeskStaff\HelpDeskStaff.resx">
+      <DependentUpon>HelpDeskStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\employee\HelpDeskStaff\OrderAdd.resx">
+      <DependentUpon>OrderAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\employee\HelpDeskStaff\Usermanagement.resx">
+      <DependentUpon>Usermanagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\employee\EmployeeLogin.resx">
+      <DependentUpon>EmployeeLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\employee\Manager\Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\employee\Manager\Managerorder.resx">
+      <DependentUpon>Managerorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\employee\Manager\Managertalk.resx">
+      <DependentUpon>Managertalk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\employee\Manager\Mtalk.resx">
+      <DependentUpon>Mtalk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Customer\AddOrder.resx">
+      <DependentUpon>AddOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Customer\UpdataOrder.resx">
+      <DependentUpon>UpdataOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Customer\UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Customer\UserLogin.resx">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\employee\HelpDeskStaff\Ordermanagement.resx">
+      <DependentUpon>Ordermanagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Jim_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+</Project>

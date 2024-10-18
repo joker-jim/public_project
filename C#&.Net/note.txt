@@ -1,0 +1,5 @@
+This project is done in C# and SQLite.
+There is also a database.db file in the path Jim/Jim/bin/Debug.
+
+Kai Jin 22011493
+Hongyang Chu 22011038
